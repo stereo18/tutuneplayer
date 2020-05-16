@@ -1,0 +1,52 @@
+{
+  "name": "tutuneplayer",
+  "version": "1.0.0",
+  "productName": "TuTune Player",
+  "description": "Radio Player",
+  "author": "stereo18 (https://github.com/stereo18)",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/stereo18/tutuneplayer",
+  "bugs": {
+    "url": "https://github.com/stereo18/tutuneplayer/issues"
+  },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "cilinux": "node build.js WINDOWS && node build.js LINUX",
+    "cidarwin": "node build.js MAC",
+    "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true node build.js",
+    "dist:win": "npm run dist -- WINDOWS",
+    "dist:mac": "npm run dist -- MAC",
+    "dist:linux": "npm run dist -- LINUX",
+    "lint": "eslint --config .eslintrc.json ."
+  },
+  "engines": {
+    "node": "12.x.x"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.14",
+    "async": "^3.2.0",
+    "discord-rpc": "^3.1.1",
+    "ejs": "^3.1.2",
+    "ejs-electron": "^2.0.3",
+    "electron-updater": "^4.3.1",
+    "fs-extra": "^9.0.0",
+    "github-syntax-dark": "^0.5.0",
+    "jquery": "^3.5.1",
+    "request": "^2.88.2",
+    "semver": "^7.3.2",
+    "tar-fs": "^2.1.0",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0",
+    "eslint": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stereo18/tutuneplayer.git"
+  }
+}
