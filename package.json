@@ -30,6 +30,7 @@
     "discord-rpc": "^3.1.1",
     "ejs": "^3.1.2",
     "ejs-electron": "^2.0.3",
+    "electron-json-config": "^1.5.3",
     "electron-updater": "^4.3.1",
     "fs-extra": "^9.0.0",
     "github-syntax-dark": "^0.5.0",

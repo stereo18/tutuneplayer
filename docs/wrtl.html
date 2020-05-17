@@ -1,0 +1,68 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>TuTune - RTL</title>
+    <script src="./assets/js/scripts/uicore.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/wlauncher.css">
+    <style>
+        body {
+            /*background: url('assets/images/backgrounds/<%=bkid%>.jpg') no-repeat center center fixed;*/
+            transition: background-image 1s ease;
+            background-size: auto;
+            -webkit-user-select: none;
+            text-align: center;
+            top: 50%; left: 50%;
+        }
+        #main {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+            background-attachment: fixed;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+        }
+        #main[overlay] {
+            filter: blur(3px) contrast(0.9) brightness(1.0);
+        }
+        audio{
+        display: none;
+        }
+        a{
+            color: black;
+        }
+    </style>
+    <script>
+        if(navigator.onLine)
+          {
+            var status = "online"
+          }
+          else
+          {
+            alert('TuTune ne détecte aucune connexion internet, les flux radio risquent de ne pas se lire correctement.')
+          }
+    </script>
+</head>
+<body>
+    <style>
+    #menu{
+        box-shadow: 1px 5px 3px #252525d9;
+        background-color: grey;
+        padding: 5px;
+    }
+    #radimg{
+        background-color: white;
+    }
+</style>
+<div id="menu">
+        <a style="padding-left: 5px;" href="wfun.html"><img id="radimg" src="./assets/images/radios/fun.png" width="50px" style="padding: 5px; top: 50%; left: 50%; align-content: center;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="wnrj.html"><img id="radimg" src="./assets/images/radios/nrj.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="wnostalgie.html"><img id="radimg" src="./assets/images/radios/nostalgie.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="wskyrock.html"><img id="radimg" src="./assets/images/radios/skyrock.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="wrtl.html"><img id="radimg" src="./assets/images/radios/rtl.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="wmradio.html"><img id="radimg" src="./assets/images/radios/mradio.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+</div>
+<div id="main"><a href="windex.html"><img src="assets/images/SealCircle.png" style="margin-top: 15px" draggable="false" height="100px"></a>
+    <h1>Lecture en cours</h1>
+    <img style="padding: 15px;" draggable="false" width="200px" src="./assets/images/radios/rtl.png" /><br><br>
+    <a href="windex.html"><h3>Stop</h3></a></div>
+<audio autoplay src="http://streaming.radio.rtl.fr/rtl-1-48-192" />
+</body>

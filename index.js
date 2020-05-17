@@ -17,8 +17,8 @@ let activity
 client = new Client({ transport: 'ipc' })
 
 activity = {
-    details: 'http://github.com/stereo18/tutuneplayer',
-    state: 'Un lecteur de radio open-source',
+    state: 'http://github.com/stereo18/tutuneplayer',
+    details: 'Un lecteur de radio open-source',
     largeImageKey: 'logo',
     largeImageText: 'TuTune Player',
     startTimestamp: new Date().getTime(),
