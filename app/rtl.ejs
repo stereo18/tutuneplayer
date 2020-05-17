@@ -15,7 +15,6 @@
             top: 50%; left: 50%;
         }
         #main {
-            height: calc(100% - 22px);
             background: linear-gradient(to top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
             background-attachment: fixed;
             width: 100%;
@@ -45,7 +44,7 @@
 </head>
 <body>
     <div id="bar">
-<% include frame.ejs %></div>
+<% include frame.ejs %><% include menu.ejs %></div>
 <div id="main"><br>
     <h1>Lecture en cours</h1>
     <img style="padding: 15px;" draggable="false" width="200px" src="./assets/images/radios/rtl.png" /><br><br>
