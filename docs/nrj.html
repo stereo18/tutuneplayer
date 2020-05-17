@@ -15,7 +15,6 @@
             top: 50%; left: 50%;
         }
         #main {
-            height: calc(100% - 22px);
             background: linear-gradient(to top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
             background-attachment: fixed;
             width: 100%;
@@ -44,9 +43,28 @@
     </script>
 </head>
 <body>
-<div id="main"><br>
+    <style>
+    #menu{
+        box-shadow: 1px 5px 3px #252525d9;
+        background-color: grey;
+        padding: 5px;
+    }
+    #radimg{
+        background-color: white;
+    }
+</style>
+<div id="menu">
+        <a style="padding-left: 5px;" href="fun.html"><img id="radimg" src="./assets/images/radios/fun.png" width="50px" style="padding: 5px; top: 50%; left: 50%; align-content: center;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="nrj.html"><img id="radimg" src="./assets/images/radios/nrj.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="nostalgie.html"><img id="radimg" src="./assets/images/radios/nostalgie.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="skyrock.html"><img id="radimg" src="./assets/images/radios/skyrock.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rtl.html"><img id="radimg" src="./assets/images/radios/rtl.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="mradio.html"><img id="radimg" src="./assets/images/radios/mradio.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+</div>
+<div id="main">
+    <a href="index.html"><img src="assets/images/SealCircle.png" style="margin-top: 15px" draggable="false" height="100px"></a>
     <h1>Lecture en cours</h1>
-    <img style="padding: 15px;" draggable="false" width="200px" src="./assets/images/radios/nrj.png" /><br><br>
+    <img style="padding: 15px; background-color: white;" draggable="false" width="200px" src="./assets/images/radios/nrj.png" /><br><br>
     <a href="index.html"><h3>Stop</h3></a></div>
 <audio autoplay src="http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3" />
 </body>
