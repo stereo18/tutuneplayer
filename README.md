@@ -71,4 +71,4 @@ Faire pour une plateforme spécifique.
 
 ### Sources.
 
-Les flux sont lus depuis les serveur de distribution respectif des radios présentées et le coeur de l'application est le [heliosLauncher](https://github.com/dscalzi/helioslauncher)
+Les flux sont lus depuis les serveur de distribution respectif des radios présentées et l'application est basée sur le [heliosLauncher](https://github.com/dscalzi/helioslauncher)
