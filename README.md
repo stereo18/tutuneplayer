@@ -5,6 +5,7 @@
 
 
 <p align="center">Un lecteur de radios francais open-source fait avec electron !</p>
+<a href="https://stereo18.github.io/tutuneplayer/" target="_blank">Cliquez ici pour acceder à la version web</a>
 
 
 
