@@ -70,7 +70,7 @@ body, button {
 
 /* Undraggable region on the top of the frame. */
 #frameResizableTop {
-    height: 1px;
+    height: 2px;
     width: 100%;
     -webkit-app-region: no-drag;
 }
@@ -78,12 +78,12 @@ body, button {
 /* Flexbox to wrap the main frame content. */
 #frameMain {
     display: flex;
-    height: 25px
+    height: 20px
 }
 
 /* Undraggable region on the left and right of the frame. */
 .frameResizableVert {
-    width: 1px;
+    width: 2px;
     -webkit-app-region: no-drag;
 }
 
@@ -106,7 +106,7 @@ body, button {
 
 /* Frame logo (windows only). */
 #frameTitleDock {
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 #frameTitleText {
     font-size: 14px;
@@ -120,7 +120,7 @@ body, button {
     position: relative;
     top: -2px;
     right: -2px;
-    height: 25px;
+    height: 22px;
 }
 #frameButtonDockWin > .frameButton:not(:first-child) {
     margin-left: -4px;
@@ -138,7 +138,7 @@ body, button {
 .frameButton {
     background: none;
     border: none;
-    height: 27px;
+    height: 22px;
     width: 39px;
     cursor: pointer;
 }
