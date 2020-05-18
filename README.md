@@ -17,7 +17,7 @@ Vous pouvez le télécharger depuis les [GitHub Releases](https://github.com/ste
 
 ## Console
 
-Pour utiliser la console :
+Pour utiliser la console de devellopement de l'environnement chromium :
 
 ```console
 ctrl + shift + i
