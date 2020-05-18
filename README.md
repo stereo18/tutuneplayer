@@ -29,7 +29,8 @@ ctrl + shift + i
 
 **Nécessaire**
 
-* [Node.js][nodejs] v12
+* Node.js v12
+* Dépendances disponibles avec ```npm install```
 
 ---
 

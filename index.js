@@ -13,6 +13,45 @@ const logger = require('./app/assets/js/loggerutil')('%c[DiscordWrapper]', 'colo
 
 let client
 let activity
+let arg
+
+process.argv.forEach((val, index) => {
+    console.log(`${val}`);
+    if (`${val}` == 'nostalgie'){
+        arg = "nostalgie.ejs"
+    }
+    else if (`${val}` == 'rtl'){
+        arg = "rtl.ejs"
+    }
+    else if (`${val}` == 'ouifm'){
+        arg = "ouifm.ejs"
+    }
+    else if (`${val}` == 'rtl2'){
+        arg = "rtl2.ejs"
+    }
+    else if (`${val}` == 'mradio'){
+        arg = "mradio.ejs"
+    }
+    else if (`${val}` == 'funradio'){
+        arg = "fun.ejs"
+    }
+    else if (`${val}` == 'skyrock'){
+        arg = "skyrock.ejs"
+    }
+    else if (`${val}` == 'virgin'){
+        arg = "virgin.ejs"
+    }
+    else if (`${val}` == 'nrj'){
+        arg = "nrj.ejs"
+    }
+    else if (`${val}` == 'rfm'){
+        arg = "rfm.ejs"
+    }
+    else {
+        arg = "index.ejs"
+    }
+    console.log(arg)
+  });
 
 client = new Client({ transport: 'ipc' })
 
@@ -130,7 +169,7 @@ function createWindow() {
     ejse.data('bkid', Math.floor((Math.random() * fs.readdirSync(path.join(__dirname, 'app', 'assets', 'images', 'backgrounds')).length)))
 
     win.loadURL(url.format({
-        pathname: path.join(__dirname, 'app', 'index.ejs'),
+        pathname: path.join(__dirname, 'app', arg),
         protocol: 'file:',
         slashes: true
     }))
