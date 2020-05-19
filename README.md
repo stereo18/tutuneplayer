@@ -9,9 +9,9 @@
 
 
 
-## Downloads
+## Téléchargement
 
-Vous pouvez le télécharger depuis les [GitHub Releases](https://github.com/stereo18/tutuneplayer/releases)
+Vous pouvez le télécharger pour windows depuis les [GitHub Releases](https://github.com/stereo18/tutuneplayer/releases). Pour les autres plateformes, veuillez suivre le guide de dévelopement et build pour votre OS.
 
 
 
@@ -23,7 +23,7 @@ Pour utiliser la console de devellopement de l'environnement chromium :
 ctrl + shift + i
 ```
 
-## Development
+## Developement
 
 ### Pré-requis
 
