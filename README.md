@@ -13,7 +13,9 @@
 
 Vous pouvez le télécharger pour windows depuis les [GitHub Releases](https://github.com/stereo18/tutuneplayer/releases). Pour les autres plateformes, veuillez suivre le guide de dévelopement et build pour votre OS.
 
+## Lecture
 
+Certains flux peuvent ne plus être valables ou peuvent prendre du temps à charger.
 
 ## Console
 
