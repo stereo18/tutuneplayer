@@ -1,4 +1,4 @@
-<p align="center"><img src="./app/assets/images/SealCircle.png" width="150px" dragable="false" height="150px"></p>
+<p align="center"><img src="./app/assets/images/SealCircle.png" width="150px" draggable="false" height="150px"></p>
 
 <h1 align="center">TuTune Player</h1>
 
