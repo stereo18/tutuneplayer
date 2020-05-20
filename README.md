@@ -15,7 +15,7 @@ Vous pouvez le télécharger pour windows depuis les [GitHub Releases](https://g
 
 ## Lecture
 
-Certains flux peuvent ne plus être valables ou peuvent prendre du temps à charger.
+Certains flux peuvent ne plus être valables (si tel est le cas, merci de le signaler) ou peuvent prendre du temps à charger.
 
 ## Console
 
