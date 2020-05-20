@@ -39,7 +39,74 @@
         <% include frame.ejs %>
     </div>
     <div id="main">
-        <% include landing.ejs %>
+        <style>
+            #radimg{
+                background-color: white;
+            }
+            .arrow{
+                height: 50px;
+                color: white;
+                left: 50%;
+                top: 50%;
+                text-align: center;
+            }
+            .arrow:hover{
+                color: grey;
+            }
+            img{
+                left: 50%;
+                top: 50%;
+            }
+            body{
+                top: 50%;
+                left: 50%;
+                text-align: center;
+            }
+        </style><img src="assets/images/SealCircle.png" draggable="false" height="100px">
+        <h2 style="text-align: center;  margin-block-start: 0.3em;
+        margin-block-end: 0.3em;">Choisisez une station à écouter</h2>
+        <div style="align-items: center; top: 50%; left: 50%; margin-left: 30px;">
+        <table>
+            <td>
+                <a style="padding-left: 15px;" href="fun.ejs"><img id="radimg" src="./assets/images/radios/fun.png" width="150px" style="padding: 5px; top: 50%; left: 50%; align-content: center;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="nrj.ejs"><img id="radimg" src="./assets/images/radios/nrj.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="nostalgie.ejs"><img id="radimg" src="./assets/images/radios/nostalgie.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="skyrock.ejs"><img id="radimg" src="./assets/images/radios/skyrock.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="rtl.ejs"><img id="radimg" src="./assets/images/radios/rtl.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+        </table>
+        <table>
+            <td>
+                <a style="padding-left: 15px;" href="mradio.ejs"><img id="radimg" src="./assets/images/radios/mradio.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="rfm.ejs"><img id="radimg" src="./assets/images/radios/rfm.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="virgin.ejs"><img id="radimg" src="./assets/images/radios/virgin.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="rtl2.ejs"><img id="radimg" src="./assets/images/radios/rtl2.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+            <td>
+                <a style="padding-left: 15px;" href="ouifm.ejs"><img id="radimg" src="./assets/images/radios/ouifm.png" width="150px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+            </td>
+        </table>
+        <table width="100%" style="text-align: center;">
+            <td style="text-align: center;">
+                <a class="arrow" href="landing2.ejs"><svg class="arrow" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+            </a>
+            </td>
+        </table>
+        </div>
     </div>
     <p style="text-align: right; font-size: 10px; margin-top: 60%; margin-right: 5px;">1.5.5 - stable</p>
 </body>
