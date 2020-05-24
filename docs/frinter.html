@@ -1,0 +1,84 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>TuTune - France Inter
+    </title>
+    <script src="./assets/js/scripts/uicore.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/launcher.css">
+    <style>
+        body {
+            /*background: url('assets/images/backgrounds/<%=bkid%>.jpg') no-repeat center center fixed;*/
+            transition: background-image 1s ease;
+            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD//gA+Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBkZWZhdWx0IHF1YWxpdHkK/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAPwBwAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A8VooopDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=');
+            background-size: auto;
+            -webkit-user-select: none;
+            text-align: center;
+            top: 50%; left: 50%;
+        }
+        #main {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+            background-attachment: fixed;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+        }
+        #main[overlay] {
+            filter: blur(3px) contrast(0.9) brightness(1.0);
+        }
+        audio{
+        display: none;
+        }
+        a{
+            color: white;
+        }
+    </style>
+    <script>
+        if(navigator.onLine)
+          {
+            var status = "online"
+          }
+          else
+          {
+            alert('TuTune ne détecte aucune connexion internet, les flux radio risquent de ne pas se lire correctement.')
+          }
+    </script>
+</head>
+<body>
+    <style>
+    #menu{
+        box-shadow: 1px 5px 3px #252525d9;
+        background-color: grey;
+        padding: 5px;
+    }
+    #radimg{
+        background-color: white;
+    }
+</style>
+    <div id="menu">
+        <a style="padding-left: 5px;" href="fun.html"><img id="radimg" src="./assets/images/radios/fun.png" width="50px" style="padding: 5px; top: 50%; left: 50%; align-content: center;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="nrj.html"><img id="radimg" src="./assets/images/radios/nrj.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="nostalgie.html"><img id="radimg" src="./assets/images/radios/nostalgie.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="skyrock.html"><img id="radimg" src="./assets/images/radios/skyrock.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rtl.html"><img id="radimg" src="./assets/images/radios/rtl.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="mradio.html"><img id="radimg" src="./assets/images/radios/mradio.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="ouifm.html"><img id="radimg" src="./assets/images/radios/ouifm.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="virgin.html"><img id="radimg" src="./assets/images/radios/virgin.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rfm.html"><img id="radimg" src="./assets/images/radios/rfm.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rtl2.html"><img id="radimg" src="./assets/images/radios/rtl2.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a><br/>
+        <a style="padding-left: 5px;" href="classique.html"><img id="radimg" src="./assets/images/radios/classique.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rire.html"><img id="radimg" src="./assets/images/radios/rire.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="beur.html"><img id="radimg" src="./assets/images/radios/beur.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="cheriefm.html"><img id="radimg" src="./assets/images/radios/cheriefm.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="europe1.html"><img id="radimg" src="./assets/images/radios/europe1.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="frinfo.html"><img id="radimg" src="./assets/images/radios/frinfo.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="frinter.html"><img id="radimg" src="./assets/images/radios/frinter.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="rmc.html"><img id="radimg" src="./assets/images/radios/rmc.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="frmusique.html"><img id="radimg" src="./assets/images/radios/frmusique.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+        <a style="padding-left: 5px;" href="mouv.html"><img id="radimg" src="./assets/images/radios/mouv.png" width="50px" style="padding: 5px; top: 50%; left: 50%;" draggable="false" /></a>
+</div>
+<div id="main"><br>
+    <h1>Lecture en cours</h1>
+    <img style="padding: 15px;" draggable="false" width="200px" src="./assets/images/radios/frinter.png" /><br><br>
+    <a href="index.html"><h3>Stop</h3></a></div>
+<audio autoplay src="http://direct.franceinter.fr/live/franceinter-midfi.mp3" />
+</body>
