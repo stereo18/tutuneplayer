@@ -7,6 +7,8 @@
 <p align="center">Un lecteur de radios francais open-source fait avec electron !</p>
 <a align="center" href="https://stereo18.github.io/tutuneplayer/" target="_blank"><p align="center">Cliquez ici pour acceder à la version web</p></a>
 
+![TuTune Player](https://i.imgur.com/eAtF8BO.png)
+
 ## Téléchargement
 
 Vous pouvez le télécharger pour windows depuis les [GitHub Releases](https://github.com/stereo18/tutuneplayer/releases). Pour les autres plateformes, veuillez suivre le guide de dévelopement et build pour votre OS.
