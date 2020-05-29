@@ -10,6 +10,14 @@ const semver                        = require('semver')
 const url                           = require('url')
 const {Client} = require('discord-rpc')
 const logger = require('./app/assets/js/loggerutil')('%c[DiscordWrapper]', 'color: #7289da; font-weight: bold')
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+
+const adapter = new FileSync('settings.json')
+const db = low(adapter)
+
+// Set some defaults (required if your JSON file is empty)
+db.defaults({settings: {}}).write()
 
 let client
 let activity
@@ -165,8 +173,6 @@ function createWindow() {
         },
         backgroundColor: '#171614'
     })
-
-    ejse.data('bkid', Math.floor((Math.random() * fs.readdirSync(path.join(__dirname, 'app', 'assets', 'images', 'backgrounds')).length)))
 
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'app', arg),
